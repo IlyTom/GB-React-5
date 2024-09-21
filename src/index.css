@@ -1,13 +1,18 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+ 
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Цвета для светлой темы */  
+.light-theme {  
+  background-color: #ffffff;  
+  color: #000000;  
+}  
+
+/* Цвета для темной темы */  
+.dark-theme {  
+  background-color: #333333;  
+  color: #ffffff;  
+}  
+
+/* Дополнительные стили для ваших заголовков и параграфов */  
+h1, p {  
+  margin: 0;  
 }

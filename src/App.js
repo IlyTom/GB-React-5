@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+ 
+import React from 'react';  
+import { Provider } from 'react-redux';  
+import store from './store';  
+import ThemeSwitcher from './ThemeSwitcher';  
+import './App.css'; // Убедитесь, что здесь импортируется файл стилей  
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {  
+  return (  
+    <Provider store={store}>  
+      <div>  
+        <ThemeSwitcher />  
+        <h2>Добро пожаловать на наш сайт!</h2>  
+        <p>Здесь вы можете переключать темы.</p>  
+      </div>  
+    </Provider>  
+  );  
+};  
 
 export default App;
